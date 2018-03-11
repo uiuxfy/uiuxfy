@@ -1,0 +1,3324 @@
+/*
+================================
+css: uiuxfy.sheets.css | Beta Version
+author: Lucas Gatsas
+github: github.com/spaceg
+blog: spaceg.github.io
+
+date: 18. Februar 2018
+
+=================================
+*/
+
+/* Google Font Raleway Font */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,800');
+/* Font Awesome */
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/* ===============================================
+Block Root V.0.1 | uiuxyf.css FREE Version V.0.1
+web: https://uiuxfy.io
+=================================================*/
+    :root {
+        --blue: #007bff;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #e83e8c;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #28a745;
+        --teal: #20c997;
+        --cyan: #17a2b8;
+        --white: #fff;
+        --gray: #6c757d;
+        --gray-dark: #343a40;
+        --primary: #007bff;
+        --secondary: #6c757d;
+        --success: #28a745;
+        --info: #17a2b8;
+        --warning: #ffc107;
+        --danger: #dc3545;
+        --light: #f8f9fa;
+        --dark: #343a40;
+        --breakpoint-xs: 0;
+        --breakpoint-sm: 576px;
+        --breakpoint-md: 768px;
+        --breakpoint-lg: 992px;
+        --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Montserrat, "Helvetica Neue", Arial, sans-serif;
+    --font-family-monospace: 'Montserrat', Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+/* Hide all blue border in Bootstrap 4 */
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+input[type="text"], textarea {
+outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
+}
+.form-control::-webkit-input-placeholder { color: white; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: white; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: white; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: white; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: white; }  /* Microsoft Edge */
+
+
+
+/* ===============================================
+Body V.0.1 | uiuxfy.css https://uiuxfy.io
+=================================================*/
+
+
+
+    /*========================================================
+    Global Styles
+    ============================================================*/
+    * {
+      outline: none; }
+
+    body {
+      background: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      overflow-x: hidden;
+      color: #8d97ad;
+      font-weight: 300; }
+
+    html {
+      position: relative;
+      min-height: 100%;
+      background: #ffffff; }
+
+    a:hover,
+    a:focus {
+      text-decoration: none; }
+
+    a.link {
+      color: #3e4555; }
+      a.link:hover, a.link:focus {
+        color: #316ce8; }
+
+    a.white-link {
+      color: #ffffff; }
+      a.white-link:hover, a.white-link:focus {
+        color: #263238; }
+
+
+
+    b, strong {
+        font-weight: 800;
+    }
+    /*
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: .5rem;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        display: block;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: .75rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #212529;
+    }
+    */
+      /*=============================================================
+      Headings Ui Kits V.0.1
+      ===============================================================*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #3e4555;
+      font-family: "Montserrat", sans-serif; }
+
+    h1 {
+      line-height: 40px;
+      font-size: 36px; }
+
+    h2 {
+      line-height: 36px;
+      font-size: 30px; }
+
+    h3 {
+      line-height: 30px;
+      font-size: 24px; }
+
+    h4 {
+      line-height: 26px;
+      font-size: 21px; }
+
+    h5 {
+      line-height: 22px;
+      font-size: 18px;
+      font-weight: 400; }
+
+    h6 {
+      line-height: 20px;
+      font-size: 16px;
+      font-weight: 400; }
+    /*=============================================================
+    Text Colors Ui Kits V.0.1
+    ===============================================================*/
+  .text-white {
+    color: #ffffff !important; }
+
+  .text-danger {
+    color: #ff4d7e !important; }
+
+  .text-muted {
+    color: #8d97ad !important; }
+
+  .text-warning {
+    color: #fec500 !important; }
+
+  .text-success {
+    color: #2cdd9b !important; }
+
+  .text-info {
+    color: #188ef4 !important; }
+
+  .text-inverse {
+    color: #3e4555 !important; }
+
+
+    /*=============================================================
+    Text Colors Ui Kits V.0.1
+    ===============================================================*/
+
+html body .text-blue {
+color: #02bec9; }
+
+html body .text-purple {
+  color: #7460ee; }
+
+html body .text-primary {
+  color: #316ce8 !important; }
+
+html body .text-megna {
+  color: #1dc8cd; }
+
+html body .text-dark {
+  color: #8d97ad; }
+
+/* Set Here Your Theme Button Default Colors */
+html body .text-themecolor {
+  color: #316ce8; }
+
+
+  /*=============================================================
+  Buttons  4 Hacks V.0.1
+  ===============================================================*/
+.btn {
+  color: #ffffff;
+  padding: 10px 25px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0s;
+  -o-transition: 0s;
+  transition: 0s; }
+  .btn:hover {
+    color: #ffffff; }
+  .btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+.btn-link {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #263238;
+  padding: 10px 15px; }
+  .btn-link .underline {
+    border-bottom: 1px solid #263238; }
+  .btn-link:hover {
+    color: #2cdd9b; }
+
+.btn-light {
+  color: #263238; }
+  .btn-light:hover {
+    background: #263238;
+    color: #ffffff;
+    border-color: #263238; }
+
+.btn-lg {
+  padding: .75rem 1.5rem;
+  font-size: 1.25rem; }
+
+.btn-md {
+  padding: 15px 45px;
+  font-size: 16px; }
+
+.btn-sm {
+  padding: .25rem .5rem;
+  font-size: 12px; }
+
+.btn-xs {
+  padding: .25rem .5rem;
+  font-size: 10px; }
+
+.btn-circle {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 10px; }
+  .btn-circle.btn-md {
+    padding: 18px 0px;
+    width: 60px;
+    height: 60px;
+    font-size: 20px; }
+
+.btn-circle.btn-sm {
+  width: 35px;
+  height: 35px;
+  padding: 8px 10px;
+  font-size: 14px; }
+
+.btn-circle.btn-lg {
+  width: 70px;
+  height: 70px;
+  padding: 24px 15px;
+  font-size: 20px;
+  line-height: 23px; }
+
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 14px 15px;
+  font-size: 24px; }
+
+.btn-rounded {
+  border-radius: 60px;
+  -webkit-border-radius: 60px; }
+
+.btn-arrow {
+  position: relative; }
+  .btn-arrow span {
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    will-change: transform; }
+  .btn-arrow:hover span, .btn-arrow:focus span {
+    -webkit-transform: translate3d(-1rem, 0, 0);
+    transform: translate3d(-1rem, 0, 0); }
+  .btn-arrow i {
+    position: absolute;
+    width: 1.1em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    will-change: right, opacity; }
+  .btn-arrow:hover i, .btn-arrow:focus i {
+    opacity: 1;
+    right: -2rem; }
+
+.btn-secondary,
+.btn-secondary.disabled {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  background-color: #ffffff;
+  color: #8d97ad; }
+  .btn-secondary:hover,
+  .btn-secondary.disabled:hover {
+    color: #ffffff !important; }
+  .btn-secondary.active, .btn-secondary:active, .btn-secondary:focus,
+  .btn-secondary.disabled.active,
+  .btn-secondary.disabled:active,
+  .btn-secondary.disabled:focus {
+    color: #ffffff !important;
+    background: #263238;
+    border-color: #263238; }
+
+.btn-primary,
+.btn-primary.disabled {
+  background: #316ce8;
+  border: 1px solid #316ce8;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-primary:hover,
+  .btn-primary.disabled:hover {
+    background: #345bcb;
+    border: 1px solid #345bcb; }
+  .btn-primary.active, .btn-primary:active, .btn-primary:focus,
+  .btn-primary.disabled.active,
+  .btn-primary.disabled:active,
+  .btn-primary.disabled:focus {
+    background: #345bcb; }
+
+.btn-themecolor,
+.btn-themecolor.disabled {
+  background: #316ce8;
+  color: #ffffff;
+  border: 1px solid #316ce8; }
+  .btn-themecolor:hover,
+  .btn-themecolor.disabled:hover {
+    background: #028ee1;
+    border: 1px solid #028ee1; }
+  .btn-themecolor.active, .btn-themecolor:active, .btn-themecolor:focus,
+  .btn-themecolor.disabled.active,
+  .btn-themecolor.disabled:active,
+  .btn-themecolor.disabled:focus {
+    background: #028ee1; }
+
+.btn-success,
+.btn-success.disabled {
+  background: #2cdd9b;
+  border: 1px solid #2cdd9b;
+  color: #ffffff; }
+  .btn-success:hover,
+  .btn-success.disabled:hover {
+    background: #1dc8cc;
+    border: 1px solid #1dc8cc; }
+  .btn-success.active, .btn-success:active, .btn-success:focus,
+  .btn-success.disabled.active,
+  .btn-success.disabled:active,
+  .btn-success.disabled:focus {
+    background: #1dc8cc; }
+
+.btn-info,
+.btn-info.disabled {
+  background: #188ef4;
+  border: 1px solid #188ef4;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-info:hover,
+  .btn-info.disabled:hover {
+    background: #2c73cb;
+    border: 1px solid #2c73cb; }
+  .btn-info.active, .btn-info:active, .btn-info:focus,
+  .btn-info.disabled.active,
+  .btn-info.disabled:active,
+  .btn-info.disabled:focus {
+    background: #2c73cb; }
+
+.btn-warning,
+.btn-warning.disabled {
+  background: #fec500;
+  color: #ffffff;
+  border: 1px solid #fec500; }
+  .btn-warning:hover,
+  .btn-warning.disabled:hover {
+    background: #dcaf17;
+    color: #ffffff;
+    border: 1px solid #dcaf17; }
+  .btn-warning.active, .btn-warning:active, .btn-warning:focus,
+  .btn-warning.disabled.active,
+  .btn-warning.disabled:active,
+  .btn-warning.disabled:focus {
+    background: #dcaf17;
+    color: #ffffff; }
+
+.btn-danger,
+.btn-danger.disabled {
+  background: #ff4d7e;
+  border: 1px solid #ff4d7e;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-danger:hover,
+  .btn-danger.disabled:hover {
+    background: #d73e6b;
+    border: 1px solid #d73e6b; }
+  .btn-danger.active, .btn-danger:active, .btn-danger:focus,
+  .btn-danger.disabled.active,
+  .btn-danger.disabled:active,
+  .btn-danger.disabled:focus {
+    background: #d73e6b; }
+
+.btn-inverse,
+.btn-inverse.disabled {
+  background: #3e4555;
+  border: 1px solid #3e4555;
+  color: #ffffff; }
+  .btn-inverse:hover,
+  .btn-inverse.disabled:hover {
+    background: #232a37;
+    color: #ffffff;
+    border: 1px solid #232a37; }
+  .btn-inverse.active, .btn-inverse:active, .btn-inverse:focus,
+  .btn-inverse.disabled.active,
+  .btn-inverse.disabled:active,
+  .btn-inverse.disabled:focus {
+    background: #232a37;
+    color: #ffffff; }
+
+.btn-red,
+.btn-red.disabled {
+  background: #fb3a3a;
+  border: 1px solid #fb3a3a;
+  color: #ffffff; }
+  .btn-red:hover,
+  .btn-red.disabled:hover {
+    border: 1px solid #d61f1f;
+    background: #d61f1f; }
+  .btn-red.active, .btn-red:active, .btn-red:focus,
+  .btn-red.disabled.active,
+  .btn-red.disabled:active,
+  .btn-red.disabled:focus {
+    background: #d73e6b; }
+
+.uiuxfy-btn-success-gradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+  border: 0px; }
+  .uiuxfy-btn-success-gradiant:hover {
+    background: #1dc8cc;
+    background: -webkit-linear-gradient(legacy-direction(to right), #1dc8cc 0%, #2cdd9b 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#1dc8cc), to(#2cdd9b));
+    background: -webkit-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: -o-linear-gradient(left, #1dc8cc 0%, #2cdd9b 100%);
+    background: linear-gradient(to right, #1dc8cc 0%, #2cdd9b 100%); }
+  .uiuxfy-btn-success-gradiant.active, .uiuxfy-btn-success-gradiant:active, .uiuxfy-btn-success-gradiant:focus {
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px;
+    opacity: 1; }
+
+.uiuxfy-btn-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  border: 0px; }
+  .uiuxfy-btn-danger-gradiant:hover {
+    background: #ff6a5b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
+    background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
+    background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%); }
+  .uiuxfy-btn-danger-gradiant.active, .uiuxfy-btn-danger-gradiant:active, .uiuxfy-btn-danger-gradiant:focus {
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px;
+    opacity: 1; }
+
+.uiuxfy-btn-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+  border: 0px;
+  color: #ffffff; }
+  .uiuxfy-btn-info-gradiant:hover {
+    background: #316ce8;
+    background: -webkit-linear-gradient(legacy-direction(to right), #316ce8 0%, #188ef4 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#316ce8), to(#188ef4));
+    background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+    background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
+    background: linear-gradient(to right, #316ce8 0%, #188ef4 100%); }
+  .uiuxfy-btn-info-gradiant.active, .uiuxfy-btn-info-gradiant:active, .uiuxfy-btn-info-gradiant:focus {
+    -webkit-box-shadow: 0px;
+    box-shadow: 0px;
+    opacity: 1;
+   }
+
+.btn-outline-secondary {
+  background-color: #ffffff;
+  color: #727b84;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-secondary.active, .btn-outline-secondary:active, .btn-outline-secondary:focus {
+    background: #263238; }
+
+.btn-outline-primary {
+  color: #316ce8;
+  background-color: #ffffff;
+  border-color: #316ce8;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary.focus {
+    background: #316ce8;
+    color: #ffffff;
+    border-color: #316ce8; }
+  .btn-outline-primary.active, .btn-outline-primary:active, .btn-outline-primary:focus {
+    background: #345bcb; }
+
+.btn-outline-success, a.btn-outline-success {
+  color: #2cdd9b;
+  background-color: transparent;
+  border-color: #2cdd9b;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-success:hover, .btn-outline-success:focus, .btn-outline-success.focus, a.btn-outline-success:hover, a.btn-outline-success:focus, a.btn-outline-success.focus {
+    background: #2cdd9b;
+    border-color: #2cdd9b;
+    color: #ffffff; }
+  .btn-outline-success.active, .btn-outline-success:active, .btn-outline-success:focus, a.btn-outline-success.active, a.btn-outline-success:active, a.btn-outline-success:focus {
+    background: #1dc8cc; }
+
+.btn-outline-info {
+  color: #188ef4;
+  background-color: transparent;
+  border-color: #188ef4;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-info:hover, .btn-outline-info:focus, .btn-outline-info.focus {
+    background: #188ef4;
+    border-color: #188ef4;
+    color: #ffffff; }
+  .btn-outline-info.active, .btn-outline-info:active, .btn-outline-info:focus {
+    background: #2c73cb; }
+
+.btn-outline-warning {
+  color: #fec500;
+  background-color: transparent;
+  border-color: #fec500;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-warning:hover, .btn-outline-warning:focus, .btn-outline-warning.focus {
+    background: #fec500;
+    border-color: #fec500;
+    color: #ffffff; }
+  .btn-outline-warning.active, .btn-outline-warning:active, .btn-outline-warning:focus {
+    background: #dcaf17; }
+
+.btn-outline-danger {
+  color: #ff4d7e;
+  background-color: transparent;
+  border-color: #ff4d7e;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .btn-outline-danger:hover, .btn-outline-danger:focus, .btn-outline-danger.focus {
+    background: #ff4d7e;
+    border-color: #ff4d7e;
+    color: #ffffff; }
+  .btn-outline-danger.active, .btn-outline-danger:active, .btn-outline-danger:focus {
+    background: #d73e6b; }
+
+.btn-outline-red {
+  color: #fb3a3a;
+  background-color: transparent;
+  border-color: #fb3a3a; }
+  .btn-outline-red:hover, .btn-outline-red:focus, .btn-outline-red.focus {
+    background: #fb3a3a;
+    border-color: #fb3a3a;
+    color: #ffffff; }
+  .btn-outline-red.active, .btn-outline-red:active, .btn-outline-red:focus {
+    background: #d73e6b; }
+
+.btn-outline-inverse {
+  color: #3e4555;
+  background-color: transparent;
+  border-color: #3e4555; }
+  .btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse.focus {
+    background: #3e4555;
+    border-color: #3e4555;
+    color: #ffffff; }
+
+.btn-outline-light:hover {
+  color: #263238 !important; }
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary.focus:active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open > .dropdown-toggle.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus {
+  background-color: #345bcb;
+  border: 1px solid #345bcb; }
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success.focus:active,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open > .dropdown-toggle.btn-success.focus,
+.open > .dropdown-toggle.btn-success:focus,
+.open > .dropdown-toggle.btn-success:hover,
+.btn-success.focus,
+.btn-success:focus {
+  background-color: #1dc8cc;
+  border: 1px solid #1dc8cc; }
+
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info.focus:active,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open > .dropdown-toggle.btn-info.focus,
+.open > .dropdown-toggle.btn-info:focus,
+.open > .dropdown-toggle.btn-info:hover,
+.btn-info.focus,
+.btn-info:focus {
+  background-color: #2c73cb;
+  border: 1px solid #2c73cb; }
+
+.btn-warning.active.focus,
+.btn-warning.active:focus,
+.btn-warning.active:hover,
+.btn-warning.focus:active,
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.open > .dropdown-toggle.btn-warning.focus,
+.open > .dropdown-toggle.btn-warning:focus,
+.open > .dropdown-toggle.btn-warning:hover,
+.btn-warning.focus,
+.btn-warning:focus {
+  background-color: #dcaf17;
+  border: 1px solid #dcaf17; }
+
+.btn-danger.active.focus,
+.btn-danger.active:focus,
+.btn-danger.active:hover,
+.btn-danger.focus:active,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.open > .dropdown-toggle.btn-danger.focus,
+.open > .dropdown-toggle.btn-danger:focus,
+.open > .dropdown-toggle.btn-danger:hover,
+.btn-danger.focus,
+.btn-danger:focus {
+  background-color: #d73e6b;
+  border: 1px solid #d73e6b; }
+
+.btn-inverse:hover,
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.btn-inverse.focus,
+.btn-inverse:active,
+.btn-inverse:focus,
+.btn-inverse:hover,
+.open > .dropdown-toggle.btn-inverse {
+  background-color: #232a37;
+  border: 1px solid #232a37; }
+
+.btn-red:hover,
+.btn-red:focus,
+.btn-red:active,
+.btn-red.active,
+.btn-red.focus,
+.btn-red:active,
+.btn-red:focus,
+.btn-red:hover,
+.open > .dropdown-toggle.btn-red {
+  background-color: #d61f1f;
+  border: 1px solid #d61f1f;
+  color: #ffffff; }
+
+.btn span.btn-devider {
+  display: inline-block;
+  padding-left: 10px; }
+
+  /*=============================================================
+  Buttons Background Colors  V.0.1
+  ===============================================================*/
+.bg-primary {
+  background-color: #316ce8 !important; }
+
+.bg-success {
+  background-color: #2cdd9b !important; }
+
+.bg-info {
+  background-color: #188ef4 !important; }
+
+.bg-warning {
+  background-color: #fec500 !important; }
+
+.bg-danger {
+  background-color: #ff4d7e !important; }
+
+.bg-orange {
+  background-color: #ff6a5b !important; }
+
+.bg-yellow {
+  background-color: #fed700; }
+
+.bg-facebook {
+  background-color: #3b5a9a; }
+
+.bg-twitter {
+  background-color: #56adf2; }
+
+.bg-success-gradiant {
+  background: #2cdd9b;
+  background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+  background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+  background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%); }
+
+.uiuxfy-bg-info-gradiant {
+  background: #188ef4;
+  background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%); }
+
+.uiuxfy-bg-danger-gradiant {
+  background: #ff4d7e;
+  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
+  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
+  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%); }
+
+  /*=============================================================
+  Gradients Buttons Colors Ui Kits V.0.1
+  ===============================================================*/
+
+  .uiuxfy-text-success-gradiant  {
+    background: #2cdd9b;
+    background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+    background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+    background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+
+  .uiuxfy-text-info-gradiant {
+    background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#188ef4), to(#316ce8));
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+
+    /*******************
+    Labels
+    *******************/
+    .label {
+      padding: 3px 15px;
+      line-height: 13px;
+      color: #ffffff;
+      font-weight: 400;
+      border-radius: 4px;
+      font-size: 75%; }
+
+    .label-rounded {
+      border-radius: 60px; }
+
+    .label-custom {
+      background-color: #1dc8cd; }
+
+    .label-success {
+      background-color: #2cdd9b; }
+
+    .label-info {
+      background-color: #188ef4; }
+
+    .label-warning {
+      background-color: #fec500; }
+
+    .label-danger {
+      background-color: #ff4d7e; }
+
+    .label-megna {
+      background-color: #1dc8cd; }
+
+    .label-primary {
+      background-color: #316ce8; }
+
+    .label-purple {
+      background-color: #7460ee; }
+
+    .label-red {
+      background-color: #fb3a3a; }
+
+    .label-inverse {
+      background-color: #3e4555; }
+
+    .label-default {
+      background-color: #f4f8fa; }
+
+    .label-white {
+      background-color: #ffffff; }
+
+    .label-light-success {
+      background-color: #e8fdeb;
+      color: #2cdd9b; }
+
+    .label-light-info {
+      background-color: #cfecfe;
+      color: #188ef4; }
+
+    .label-light-warning {
+      background-color: #fff8ec;
+      color: #fec500; }
+
+    .label-light-danger {
+      background-color: #f9e7eb;
+      color: #ff4d7e; }
+
+    .label-light-megna {
+      background-color: #e0f2f4;
+      color: #1dc8cd; }
+
+    .label-light-primary {
+      background-color: #f1effd;
+      color: #316ce8; }
+
+    .label-light-inverse {
+      background-color: #f6f6f6;
+      color: #3e4555; }
+
+    /*******************
+     Badge
+    ******************/
+    .badge {
+      font-weight: 400; }
+
+    .badge-xs {
+      font-size: 9px; }
+
+    .badge-xs,
+    .badge-sm {
+      -webkit-transform: translate(0, -2px);
+      -ms-transform: translate(0, -2px);
+      -o-transform: translate(0, -2px);
+      transform: translate(0, -2px); }
+
+    .badge-success {
+      background-color: #2cdd9b; }
+
+    .badge-info {
+      background-color: #188ef4; }
+
+    .badge-primary {
+      background-color: #316ce8; }
+
+    .badge-warning {
+      background-color: #fec500; }
+
+    .badge-danger {
+      background-color: #ff4d7e; }
+
+    .badge-purple {
+      background-color: #7460ee; }
+
+    .badge-red {
+      background-color: #fb3a3a; }
+
+    .badge-inverse {
+      background-color: #3e4555; }
+
+
+      /*******************
+      font weight
+      *******************/
+      html body .font-bold {
+        font-weight: 700; }
+
+      html body .font-semibold {
+        font-weight: 600; }
+
+      html body .font-normal {
+        font-weight: normal; }
+
+      html body .font-light {
+        font-weight: 300; }
+
+      html body .font-medium {
+        font-weight: 500; }
+
+      html body .font-16 {
+        font-size: 16px; }
+
+      html body .font-14 {
+        font-size: 14px; }
+
+      html body .font-13 {
+        font-size: 13px; }
+
+      html body .font-10 {
+        font-size: 10px; }
+
+      html body .font-18 {
+        font-size: 18px; }
+
+      html body .font-20 {
+        font-size: 20px; }
+
+      html body .font-stylish {
+        font-family: "Calafia-Regular"; }
+
+        /*******************
+        Paddings
+        *******************/
+        html body .p-0 {
+          padding: 0px; }
+
+        html body .p-10 {
+          padding: 10px; }
+
+        html body .p-15 {
+          padding: 15px; }
+
+        html body .p-20 {
+          padding: 20px; }
+
+        html body .p-30 {
+          padding: 30px; }
+
+        html body .p-40 {
+          padding: 40px; }
+
+        html body .p-l-0 {
+          padding-left: 0px; }
+
+        html body .p-l-10 {
+          padding-left: 10px; }
+
+        html body .p-l-20 {
+          padding-left: 20px; }
+
+        html body .p-r-0 {
+          padding-right: 0px; }
+
+        html body .p-r-10 {
+          padding-right: 10px; }
+
+        html body .p-r-20 {
+          padding-right: 20px; }
+
+        html body .p-r-30 {
+          padding-right: 30px; }
+
+        html body .p-r-40 {
+          padding-right: 40px; }
+
+        html body .p-t-0 {
+          padding-top: 0px; }
+
+        html body .p-t-10 {
+          padding-top: 10px; }
+
+        html body .p-t-20 {
+          padding-top: 20px; }
+
+        html body .p-t-30 {
+          padding-top: 30px; }
+
+        html body .p-b-0 {
+          padding-bottom: 0px; }
+
+        html body .p-b-5 {
+          padding-bottom: 5px; }
+
+        html body .p-b-10 {
+          padding-bottom: 10px; }
+
+        html body .p-b-20 {
+          padding-bottom: 20px; }
+
+        html body .p-b-30 {
+          padding-bottom: 30px; }
+
+        html body .p-b-40 {
+          padding-bottom: 40px; }
+
+        /*******************
+        Margin
+        *******************/
+        html body .m-0 {
+          margin: 0px; }
+
+        html body .m-l-5 {
+          margin-left: 5px; }
+
+        html body .m-l-10 {
+          margin-left: 10px; }
+
+        html body .m-l-15 {
+          margin-left: 15px; }
+
+        html body .m-l-20 {
+          margin-left: 20px; }
+
+        html body .m-l-30 {
+          margin-left: 30px; }
+
+        html body .m-l-40 {
+          margin-left: 40px; }
+
+        html body .m-r-5 {
+          margin-right: 5px; }
+
+        html body .m-r-10 {
+          margin-right: 10px; }
+
+        html body .m-r-15 {
+          margin-right: 15px; }
+
+        html body .m-r-20 {
+          margin-right: 20px; }
+
+        html body .m-r-30 {
+          margin-right: 30px; }
+
+        html body .m-r-40 {
+          margin-right: 40px; }
+
+        html body .m-t-0 {
+          margin-top: 0px; }
+
+        html body .m-t-5 {
+          margin-top: 5px; }
+
+        html body .m-t-10 {
+          margin-top: 10px; }
+
+        html body .m-t-15 {
+          margin-top: 15px; }
+
+        html body .m-t-20 {
+          margin-top: 20px; }
+
+        html body .m-t-30 {
+          margin-top: 30px; }
+
+        html body .m-t-40 {
+          margin-top: 40px; }
+
+        html body .m-b-0 {
+          margin-bottom: 0px; }
+
+        html body .m-b-5 {
+          margin-bottom: 5px; }
+
+        html body .m-b-10 {
+          margin-bottom: 10px; }
+
+        html body .m-b-15 {
+          margin-bottom: 15px; }
+
+        html body .m-b-20 {
+          margin-bottom: 20px; }
+
+        html body .m-b-30 {
+          margin-bottom: 30px; }
+
+        html body .m-b-40 {
+          margin-bottom: 40px; }
+
+/* ==================================================
+  Banners V.0.1
+  ==================================================*/
+
+  @media (max-width: 1680px) and (min-width: 1500px){
+#banner1 {
+    background-position: right center;
+}
+}
+#banner1 {
+    background: right -3em center no-repeat #e9f3f8;
+}
+.banner {
+    position: relative;
+    max-height: 700px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    display: table;
+}
+.spacer {
+    padding: 90px 0;
+}
+
+
+
+
+    /* ===============================================
+    Headers Block V.0.1 | uiuxfy.css https://uiuxfy.io
+    =================================================*/
+      .header {
+          position: relative;
+          width: 100vw;
+          height: 600px;
+        }
+        .header .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            transform:translate(-50%,-50%);
+            z-index: 5;
+          padding: 1rem;
+        }
+        .header .left {
+          position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            transform:translate(-50%,-50%);
+            z-index: 5;
+          padding: 1rem;
+        }
+        .header .right {
+          position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            transform:translate(-50%,-50%);
+            z-index: 5;
+          padding: 1rem;
+        }
+        .header .scroll {
+          position: absolute;
+          top: 95%;
+          left: 50%;
+          transform:translate(-50%,-50%);
+          color: #fff;
+          font-size: 1.5rem;
+        }
+        /*=== Large devices (desktops, 992px and up) ===*/
+        @media (min-width: 992px) {
+        .header .center {
+          width: 50%;
+        }
+        .header .left {
+          position: absolute;
+          top: 20%;
+          left: 10%;
+          width: 40%;
+          height: 60%;
+          transform:translate(0, 0);
+          padding: 1rem;
+        }
+        .header .right {
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          width: 40%;
+          height: 60%;
+          transform:translate(0, 0);
+          padding: 1rem;
+        }
+        }
+
+        /* ===============================================
+        Header 1 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        =================================================*/
+        #header1 {
+          background: #355c7d;
+          background: linear-gradient( rgba(0, 138, 255, 0.8), /* #339ffb */ rgba(7, 16, 212, 0.8), /* #6c5b7b */ rgba(31, 19, 232, 0.8)/* #1636ad */ ), /* bottom image */
+          url(https://static.pexels.com/photos/33972/pexels-photo.jpg) no-repeat left top;
+          background-size: cover;
+        }
+        #header1 .caption {
+            text-align: center;
+          color: #fff;
+        }
+        #header1 .caption .title {
+            margin-bottom: 1.5rem;
+            color: #fff;
+
+        }
+        #header1 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+        #header1 .caption .action {
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            border-radius: 15px;
+        }
+
+        /* ===============================================
+        Header 2 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        =================================================*/
+        #header2 {
+          background: linear-gradient( rgba(0, 138, 255, 0.8), /* #339ffb */ rgba(7, 16, 212, 0.8), /* #6c5b7b */ rgba(31, 19, 232, 0.8) /* #2328bb */ ),
+          url(https://cdn.stocksnap.io/img-thumbs/960w/LPPN6E2YK4.jpg) no-repeat left top;
+          background-size: cover;
+            z-index: 0; /* bottom layout */
+        }
+        #header2 .caption {
+            z-index: 5;
+          text-align: center;
+          color: #fff;
+        }
+        #header2 .caption .title {
+            margin-bottom: 1.5rem;
+            color: #fff;
+
+        }
+        #header2 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+        #header2 .caption .action {
+          display: flex;
+            margin-bottom: 1rem;
+            margin-left: 15%;
+          width: 70%;
+        }
+        /*=== Large devices (desktops, 992px and up) ===*/
+        @media (min-width: 992px) {
+        #header2 .caption {
+          text-align: left;
+        }
+        #header2 .caption .action {
+          display: flex;
+          margin-bottom: 1rem;
+          margin-left: 0%;
+          width: 80%;
+        }
+        }
+
+        /* ===============================================
+        Header 3 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        =================================================*/
+        #header3 {
+          background: #355c7d;
+        background: linear-gradient( to left, rgb(19, 60, 170), /* #b5b5b5 */ rgba(33, 54, 158, 0.7) /* #312edc */ ), url(https://cdn.stocksnap.io/img-thumbs/960w/Y01VDYAX63.jpg) no-repeat left top;
+        background-size: cover;
+        z-index: 0;
+        }
+        #header3 .right {
+            display: none;
+        }
+        #header3 .caption {
+            z-index: 5;
+          text-align: center;
+          color: #fff;
+        }
+        #header3 .caption .title {
+            margin-bottom: 1.5rem;
+            color: #fff;
+
+        }
+        #header3 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+        #header3 .caption .action {
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        /*=== Large devices (desktops, 992px and up) ===*/
+        @media (min-width: 992px) {
+        #header3 .caption {
+          text-align: left;
+        }
+        #header3 .right {
+          display: block;
+        }
+        }
+
+        /* ===============================================
+        Header 4 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        =================================================*/
+        #header4 {
+
+          background: #0b8af5;
+          background: linear-gradient( rgba(43, 147, 234, 0.8), /* #256dab */ rgba(8, 21, 140, 0.8), /* #6c5b7b */ rgba(27, 41, 144, 0.8) /* #0037ff */ ), url(https://cdn.stocksnap.io/img-thumbs/960w/Y01VDYAX63.jpg) no-repeat left top;
+          background-size: cover;
+          z-index: 0;
+
+        }
+        #header4 .caption {
+            z-index: 5;
+          text-align: center;
+          color: #fff;
+        }
+        #header4 .caption .title {
+            margin-bottom: 1.5rem;
+            color: #fff;
+
+        }
+        #header4 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+        #header4 .caption .action {
+          display: flex;
+          margin-bottom: 1rem;
+          margin-left: 15%;
+          width: 70%;
+        }
+        /*=== Large devices (desktops, 992px and up) ===*/
+        @media (min-width: 992px) {
+        #header4 .caption .action {
+          margin-left: 10%;
+          width: 80%;
+        }
+        }
+
+        /* ===============================================
+        Header 5 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        =================================================*/
+        #header5 {
+
+          background: linear-gradient(to right, #1a00ff, #8a7eff, #1a7aff);
+          z-index: 0;
+        }
+        #header5 .left {
+          display: none;
+        }
+        #header5 .caption {
+            z-index: 5;
+          text-align: center;
+          color: #fff;
+        }
+        #header5 .caption .title {
+            margin-bottom: 1.5rem;
+            color: #fff;
+
+        }
+        #header5 .caption .text {
+            margin-bottom: 1.5rem;
+        }
+        #header5 .caption .action {
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            border-radius: 10px;
+        }
+        /*=== Large devices (desktops, 992px and up) ===*/
+        @media (min-width: 992px) {
+        #header5 .left {
+          display: block;
+        }
+
+        #header5 .caption {
+          text-align: left;
+        }
+        }
+
+  /* ===============================================
+  demo 4 Block V.0.1 | uiuxfy.css https://uiuxfy.io
+  =================================================*/
+
+  /*=== for demo only ===*/
+  .demo-title {
+    text-align: center;
+    color: #808080;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+  .demo-more {
+    text-align: center;
+    color: #808080;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .demo-more i {
+    color: #696969;
+  }
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .0rem;
+}
+.jumbotron-1 {
+    padding: 2rem 1rem;
+    margin-bottom: 0rem;
+    background-color: #0011ffd6;
+    border-radius: .0rem;
+}
+
+/* ===============================================
+Buttons  Block V.0.1 | uiuxfy.css https://uiuxfy.io
+=================================================*/
+
+
+    header.masthead {
+        padding-top: 10rem;
+        padding-bottom: calc(10rem - 56px);
+        background-image: url(../img/header.jpg);
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+       text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+        box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    }
+
+
+    /* Navbars Pills Colors */
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #1c46f2;
+    }
+
+
+
+
+
+/* ======================================================
+Navbar Section Block V.0.1 | uiuxfy.css https://uiuxfy.io
+=========================================================*/
+    .fixed-bottom {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+        margin-bottom: -1px;
+    }
+    @media (min-width: 768px){
+    .navbar-expand-md .navbar-nav .dropdown-menu-right {
+        right: 0;
+        left: auto;
+    }
+    }
+
+    @media (min-width: 768px) {
+    .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+    }}
+    .show>.dropdown-menu-animated {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity .5s,transform .5s;
+        transition-timing-function: cubic-bezier(.2,1,.3,1);
+        transform: scale3d(1,1,1) translate3d(0,0,0);
+    }
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+    .dropdown-menu.show {
+        display: block;
+    }
+    .dropdown-menu-user {
+        top: 104%;
+    }
+    .dropdown-menu-animated {
+        display: block;
+        padding: 1.5rem 1.75rem;
+        margin-top: 0;
+        visibility: hidden;
+        border: 0 none;
+        box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+        opacity: 0;
+        transition: opacity .5s,transform .5s,visibility 0s .5s;
+        transition-timing-function: cubic-bezier(.7,0,.3,1);
+        transform: scale3d(.95,.95,1) translate3d(0,-15px,0);
+        transform-origin: 100% 0;
+    }
+    .dropdown-menu {
+        padding: 1.5rem 1.75rem;
+        margin-top: 0;
+        border: 0 none;
+    }
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        float: left;
+        min-width: 10rem;
+        padding: .5rem 0;
+        margin: .125rem 0 0;
+        font-size: 13px;
+        color: #424753;
+        text-align: left;
+        list-style: none;
+        background-color: #fff;
+        background-clip: padding-box;
+        border-radius: .25rem;
+    }
+    .dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+     background:none;
+
+
+    }
+    /*
+    h6 {
+        font-weight: 300;
+        line-height: 1;
+        font-size: 13px;
+    }*/
+    .navbar-dark .navbar-form .form-control {
+        color: #fff!important;
+    }
+    .dropdown-menu .media {
+        padding-bottom: 1.25rem;
+        margin-bottom: 1.25rem;
+        color: #424753;
+        border-bottom: 1px solid #e9eaec2e;
+    }
+    .dropdown-menu.dropdown-menu-right.dropdown-menu-user.dropdown-menu-animated.show {
+          padding: 20px;
+    }
+
+    .uiuxfy-search {
+
+      padding-top: 19px;
+      font-size: 20px;
+      font-weight: 100;
+    }@media (min-width: 768px) {
+    .navbar-dark .navbar-nav-transparent .navbar-form .form-control {
+        background: 0 0;
+    }
+    }
+    .navbar-dark .navbar-nav-transparent .navbar-form .form-control {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…QwNi4wODMgWiIgaWQ9IlNoYXBlIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+        font-weight: 600;
+    }
+    @media (min-width: 768px) {
+    .navbar-dark .navbar-form .form-control {
+        box-shadow: inset 0 -2px 0 rgba(255,255,255,.2);
+    }}
+    .navbar-dark .navbar-form .form-control {
+        color: #fff!important;
+    }}
+    @media (min-width: 768px) {
+    .navbar-dark .navbar-form .form-control {
+        background: 0 0;
+    }}
+    .navbar-dark .navbar-form .form-control {
+        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiP…QwNi4wODMgWiIgaWQ9IlNoYXBlIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+        font-weight: 400;
+    }
+    @media (min-width: 768px) {
+    .navbar-form .form-control {
+        padding: .5625rem .625rem;
+        font-size: .9375rem;
+        background: 0 0;
+        border-radius: 0;
+        box-shadow: inset 0 -2px 0 rgba(66,71,83,.2);
+    }}
+    .navbar-form .form-control {
+        position: relative;
+        padding: 1rem 15px;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.2;
+        color: #fff;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAyNXB4IiBoZWlnaHQ9IjEwMjRweCIgd…0ibm9uZSIgZmlsbD0iIzQyNDc1MyIgZmlsbC1ydWxlPSJldmVub2RkIj48L3BhdGg+PC9zdmc+);
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 15px) 50%;
+    }
+    @media (min-width: 768px) {
+    .dropdown-menu-search {
+        position: absolute;
+        top: 1.375rem;
+        right: 3.5rem!important;
+        min-width: 22rem;
+        background-color: transparent;
+    }}
+    .media {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }.has-gradient {
+        background-image: linear-gradient(45deg,#663fb5,#2b8be3);
+        background-repeat: repeat-x;
+    }
+    .btn-circle {
+        display: block;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0;
+        font-size: 1.25rem;
+        line-height: 2.2;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        opacity: .8;
+    }
+
+    /* This is the Navbbar Toogle */
+    .navbar-dark .navbar-toggler {
+        color: rgba(255,255,255,.5);
+        border-color: rgba(255, 255, 255, 0);
+    }
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0, 0, 0, 0);
+    }
+    /* The round icon for the divider */
+    .navbar-dark .navbar-divider {
+        background: rgba(255,255,255,.2);
+    }
+    .navbar-divider {
+        width: 5px;
+        height: 5px;
+        padding: 0;
+        margin: 1rem;
+        background: rgba(66,71,83,.2);
+        border-radius: 50%;
+        margin-top: 32px;
+    }
+    @media (max-width: 768px) {
+    .navbar-divider{
+      display:none;
+    }}
+    /* This set the div for the menu right display: -webkit-box */
+    .uiuxfy-top-li {
+     padding-top: 8px;
+        display: -webkit-box;
+    }
+
+    @media (max-width: 768px) {
+    .uiuxfy-top-li {
+        padding-top: 8px;
+        display: block;
+    }}
+    /* This set the round image in the °Navbar round border */
+    .rounded-circle.uiuxfy-img-s {
+        border: 4px solid #fff;
+    }
+    .navbar-brand {
+        display: inline-block;
+        padding-top: .3125rem;
+        padding-bottom: .3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+        white-space: nowrap;
+        color: black;
+    }
+    /* ======================================================
+    Cards Styles Section Block V.0.1 | uiuxfy.css https://uiuxfy.io
+    =========================================================*/
+
+        .card {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0,0,0,.125);
+            border-radius: .25rem;
+        }
+        .card-img-top {
+
+          width: 100%;
+          border-top-left-radius: calc(.25rem - 1px);
+          border-top-right-radius: calc(.25rem - 1px);
+          border-bottom-left-radius: calc(.25rem - 1px);
+          border-bottom-right-radius: calc(.25rem - 1px);
+
+        }
+        .card-body {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 1.25rem;
+        }
+        .card-title {
+            margin-bottom: .75rem;
+            font-size: 18px;
+        font-weight: bold;
+        }
+
+
+        .card:hover  {
+            -webkit-box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.54);
+            -moz-box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.54);
+            box-shadow: -1px 3px 9px -4px rgba(0,0,0,0.54);
+
+
+        }
+
+        /* ================================================================
+        Style Blue Custom Cards  Block V.0.1 | uiuxfy.css https://uiuxfy.io
+        ====================================================================*/
+        h2{float:left; width:100%; margin-bottom:60px; position:relartive; z-index:3;}
+      /*  h2 span{display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700;}*/
+        h2 a{color:#fff; font-weight:bold;}
+
+
+        .s-full-image-background{float:left;width:100%;padding:30px 0; position:relative; overflow:hidden; background:#6F8D8A;    margin-bottom: 50px;}
+        .s-full-image-background:before{content:"";position:absolute; width:110%; height:100%;     background: #0b8af5;
+            background: linear-gradient( rgba(43, 147, 234, 0.8), /* #256dab */ rgba(14, 35, 239, 0.8), /* #6c5b7b */ rgba(44, 27, 144, 0.8) /* #0037ff */ ), url(https://cdn.stocksnap.io/img-thumbs/960w/Y01VDYAX63.jpg) no-repeat left top;
+            background-size: cover;
+            z-index: 0;
+        background-size:cover; filter: blur(10px); z-index:0; transform: scale(2);-ms-transform: scale(2); -webkit-transform: scale(2);}
+        h3{margin-bottom:20px; }
+        .btn-default{background:blue; color:#fff; font-weight:700; text-shadow:1px 1px 0 rgba(0,0,0,0.2); font-size:14px;}
+        .card{/*box-shadow:2px 2px 20px rgba(0,0,0,0.3); */ border:none; margin-bottom:30px;}
+        .card-01 .card-body{position:relative; padding-top:40px;}
+        .card-01 .badge-box{position:absolute; top:-20px; left:50%; width:100px; height:100px;margin-left:-50px; text-align:center;}
+        .card-01 .badge-box i{background:blue; color:#fff; border-radius:50%;  width:50px; height:50px; line-height:50px; text-align:center; font-size:20px;}
+        .card-01.height-fix{height:455px; overflow:hidden;}
+        .card-01.height-fix .card-img-top{width:auto!important;}
+        .card.card-01{border: 0px solid white;}
+
+        .profile-box{background-size:cover; float:left; width:100%; text-align:center; padding:30px 0; position:relative; overflow:hidden;}
+        .profile-box:before{filter: blur(10px);background:url("") no-repeat;
+        background-size:cover; width:120%; position:absolute; content:""; height:120%; left:-10%;top:0;z-index:0;}
+        .profile-box img{width:170px; height:170px; position:relative; border:5px solid #fff;}
+        .social-box i {border:1px solid blue; color:blue; width:30px; height:30px; border-radius:50%;line-height:30px;}
+        .social-box i:hover{background:blue; color:#fff;}
+        .social-box a{margin: 0 5px;}
+        .video-foreground{float:left;width:100%; height:500px;}
+
+        .card-01.height-fix .card-img-overlay{top: 52%;
+            color: #fff;
+            background: -moz-linear-gradient(top, rgba(132, 136, 255, 0) 0%,rgba(26,96,111,0) 1%,rgb(61, 120, 253) 1%,rgb(51, 95, 255) 100%);
+            background: -webkit-linear-gradient(top, rgba(132, 136, 255, 0) 0%,rgba(26,96,111,0) 1%,rgb(61, 120, 253) 1%,rgb(51, 95, 255) 100%);
+            background: linear-gradient(to to, rgba(26,96,111,0) 0%,rgba(26,96,111,0) 2%,rgba(0, 90, 255, 0.91) 21%,rgba(0, 90, 255, 0.91) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001a606f', endColorstr='#e8154159',GradientType=0 );
+            /* height: 250px; */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001a606f', endColorstr='#e8154159',GradientType=0 );
+        }
+        .card-01.height-fix .fa{color: #fff;font-size: 22px;margin-right: 18px;};
+
+        /*flipper-card*/
+        .card-flipper {
+          position: relative;
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+
+        .card__front,
+        .card__back {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        .card__back .card{
+            width:100%;
+            height:65vh;
+        }
+
+        .card__front,
+        .card__back {
+          -webkit-backface-visibility: hidden;
+                  backface-visibility: hidden;
+          -webkit-transition: -webkit-transform 0.3s;
+                  transition: transform 0.3s;
+        }
+
+        .card__front {
+          background-color: #ff5078;
+        }
+
+        .card__back {
+          background-color: #1e1e1e;
+          -webkit-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+        }
+        .card-flipper.effect__hover{position:relative;}
+        .card-flipper.effect__hover:hover .card__front {
+          -webkit-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+        }
+
+        .card-flipper.effect__hover:hover .card__back {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+        }
+
+        .card-flipper.effect__random.flipped .card__front {
+          -webkit-transform: rotateY(-180deg);
+                  transform: rotateY(-180deg);
+        }
+
+        .card-flipper.effect__random.flipped .card__back {
+          -webkit-transform: rotateY(0);
+                  transform: rotateY(0);
+        }
+    /* ================================================================
+     Cards with Gray Background  v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+    ====================================================================*/
+
+        .s-row{
+            padding: 50px 50px;
+        }
+
+        .uiuxfy-section-bg-gray {
+            background-color: #f3f5f7;
+        }
+
+        .s-cards {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 0 35px;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 30px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+        .s-cards:hover {
+            -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .s-cards .top_line {
+            position: absolute;
+            top: 0;
+            left: 44%;
+            background-color: blue;
+            width: 12%;
+            height: 3px;
+        }
+
+        .s-cards  .s-cards-holder {
+            padding: 40px 0;
+        }
+        .s-cards .s-cards-holder img {
+            margin: 0 auto;
+        }
+        .s-cards .s-cards-title {
+            font-weight: 600;
+            font-size: 22px;
+            padding-bottom: 35px;
+            margin: 0;
+            color: #2b353a;
+        }
+        .s-cards .s-card-content{
+            padding-bottom: 65px;
+            color: #2b353a;
+        }
+        .s-cards .s-card-content-icon{
+            position: absolute;
+            bottom: -9px;
+            left: 47%;
+            color: #fff;
+            background-color: blue;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .s-cards .s-card-content-icon i {
+            font-size: 24px;
+            text-align: center;
+            padding: 2px 3px 2px 5px;
+        }
+        /* ================================================================
+         Single Cards  v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+        ====================================================================*/
+
+        h5 {
+            font-size: 1.28571429em;
+            font-weight: 700;
+            line-height: 1.2857em;
+            margin: 0;
+        }
+
+        .s-card-xs {
+            font-size: 1em;
+            overflow: hidden;
+            padding: 0;
+            border: none;
+            border-radius: .28571429rem;
+            box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+        }
+
+        .s-card-xs-block {
+            font-size: 1em;
+            position: relative;
+            margin: 0;
+            padding: 1em;
+            border: none;
+            border-top: 1px solid rgba(34, 36, 38, .1);
+            box-shadow: none;
+        }
+
+        .s-card-xs-img-top {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .s-card-xs-title {
+            font-size: 1.28571429em;
+            font-weight: 700;
+            line-height: 1.2857em;
+        }
+
+        .s-card-xs-text {
+            clear: both;
+            margin-top: .5em;
+            color: rgba(0, 0, 0, .68);
+        }
+
+        .s-card-xs-footer {
+            font-size: 1em;
+            position: static;
+            top: 0;
+            left: 0;
+            max-width: 100%;
+            padding: .75em 1em;
+            color: rgba(0, 0, 0, .4);
+            border-top: 1px solid rgba(0, 0, 0, .05) !important;
+            background: #fff;
+            margin-bottom: 38px;
+            margin-top: 20px;
+        }
+
+        .s-card-xs-inverse .btn {
+            border: 1px solid rgba(0, 0, 0, .05);
+        }
+
+        .profile {
+            position: absolute;
+            top: -12px;
+            display: inline-block;
+            overflow: hidden;
+            box-sizing: border-box;
+            width: 35px;
+            height: 35px;
+            margin: 0;
+            border: 1px solid #fff;
+            border-radius: 90px;
+        }
+
+        .profile-avatar {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .profile-inline {
+            position: relative;
+            top: 0;
+            display: inline-block;
+        }
+
+        .profile-inline ~ .card-title {
+            display: inline-block;
+            margin-left: 4px;
+            vertical-align: top;
+        }
+
+        .text-bold {
+            font-weight: 700;
+        }
+
+        .meta {
+            font-size: 1em;
+            color: rgba(0, 0, 0, .4);
+        }
+
+        .meta a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, .4);
+        }
+
+        .meta a:hover {
+            color: rgba(0, 0, 0, .87);
+        }
+
+
+
+            /* Profile Cards V.0.1   */
+            .card-social .btn {
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                padding: .4rem .75rem;
+                font-size: .875rem;
+                font-weight: 300;
+                color: #fff;
+                text-transform: capitalize;
+                letter-spacing: 0;
+                border-color: #fff;
+            }
+            .card-social img {
+                margin-bottom: 1rem;
+                box-shadow: 0 0 0 4px #fff;
+            }
+
+    /* ================================================================
+    Login Carousel  Block V.0.1 | uiuxfy.css https://uiuxfy.io
+    ====================================================================*/
+
+      .uiuxfy-login-block{
+         /* background: blue;
+      background: -webkit-linear-gradient(to bottom, blue, blue);
+      background: linear-gradient(to bottom, blue, blue);
+
+      */
+
+
+      float:left;
+      width:100%;
+      padding : 50px 0;
+      }
+  /*    .container.login-block-height {
+    height: 500px;
+}*/
+      .banner-sec{ background-size:cover; min-height:0px; border-radius: 0 10px 10px 0; padding:0;}
+      .container{}
+      .carousel-inner{border-radius:0 10px 10px 0;}
+      #s-inner {    border-radius: 0 10px 10px 0;}
+      .carousel-caption{text-align:left; }
+      .login-sec{padding: 50px 30px; position:relative;-webkit-box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+      -moz-box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+      box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+      border-radius: 10px 0px  0px 10px;}
+      .login-sec .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+      .login-sec .copy-text i{color:blue;}
+      .login-sec .copy-text a{color:blue;}
+      .login-sec h2{margin-bottom:30px; font-weight:800; font-size:30px; color: blue;}
+      .login-sec h2:after{content:" "; width:100px; height:5px; background:blue; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+      .btn-login{background: blue;color:#fff; font-weight:600;}
+      .banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+      .banner-text h2{color:#fff; font-weight:600;}
+      .banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+      .banner-text p{color:#fff;}
+
+
+    .uiuxfy-login-block1{
+    /* background: blue;
+     background: -webkit-linear-gradient(to bottom, blue, blue);
+     background: linear-gradient(to bottom, blue, blue);
+     */
+     float:left;
+     width:100%;
+     padding : 50px 0;
+     }
+     .banner-sec1{ background-size:cover; min-height:0px; border-radius: 0 10px 10px 0; padding:0;}
+     .container{background:}
+     .carousel-inner{border-radius:10px 0px  0px 10px;}
+     .carousel-caption{text-align:left;}
+     .login-sec1{padding: 50px 30px; position:relative;-webkit-box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+     -moz-box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+     box-shadow: -8px 2px 62px 0px rgba(0,0,0,0.42);
+     border-radius: 0 10px 10px 0;}
+     .login-sec1 .copy-text{position:absolute; width:80%; bottom:20px; font-size:13px; text-align:center;}
+     .login-sec1 .copy-text i{color:blue;}
+     .login-sec1 .copy-text a{color:blue;}
+     .login-sec1 h2{margin-bottom:30px; font-weight:800; font-size:30px; color: blue;}
+     .login-sec1 h2:after{content:" "; width:100px; height:5px; background:blue; display:block; margin-top:20px; border-radius:3px; margin-left:auto;margin-right:auto}
+     .btn-login{background: blue;color:#fff; font-weight:600;}
+     .banner-text{width:70%; position:absolute; bottom:40px; padding-left:20px;}
+     .banner-text h2{color:#fff; font-weight:600;}
+     .banner-text h2:after{content:" "; width:100px; height:5px; background:#FFF; display:block; margin-top:20px; border-radius:3px;}
+     .banner-text p{color:#fff;}
+
+
+     /* ================================================================
+     Tables with slider buttons v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+     ====================================================================*/
+      .table {
+          border: none;
+      }
+
+      .table-definition thead th:first-child {
+          pointer-events: none;
+          background: white;
+          border: none;
+      }
+
+      .table td {
+          vertical-align: middle;
+      }
+
+      .page-item > * {
+          border: none;
+      }
+
+      .custom-checkbox {
+        min-height: 1rem;
+        padding-left: 0;
+        margin-right: 0;
+        cursor: pointer;
+      }
+        .custom-checkbox .custom-control-indicator {
+          content: "";
+          display: inline-block;
+          position: relative;
+          width: 30px;
+          height: 18px;
+          background-color: #818181;
+          border-radius: 15px;
+          margin-right: 10px;
+          -webkit-transition: background .3s ease;
+          transition: background .3s ease;
+          vertical-align: middle;
+          margin: 0 16px;
+          box-shadow: none;
+          background-color: #c3c3c3;
+          background-image: none;
+          box-shadow: none !important;
+          /* position: absolute; */
+          /* margin: 0; */
+          width: 67px;
+          height: 34px;
+          /* opacity: 0; */
+          border: 3px solid #c3c3c3;
+        }
+          .custom-checkbox .custom-control-indicator:after {
+              content: "";
+          position: absolute;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          background-color: #f1f1f1;
+          border-radius: 21px;
+          /* box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.4); */
+          /* left: -2px; */
+          top: -1px;
+          -webkit-transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+          transition: left .3s ease, background .3s ease, box-shadow .1s ease;
+          }
+        .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
+          content: "";
+          display: inline-block;
+          position: relative;
+          width: 30px;
+          height: 18px;
+          background-color: #818181;
+          border-radius: 15px;
+          margin-right: 10px;
+          -webkit-transition: background .3s ease;
+          transition: background .3s ease;
+          vertical-align: middle;
+          margin: 0 16px;
+          box-shadow: none;
+          background-color: #c3c3c3;
+          background-image: none;
+          box-shadow: none !important;
+          /* position: absolute; */
+          /* margin: 0; */
+          width: 67px;
+          height: 34px;
+          /* opacity: 0; */
+          border: 3px solid #c3c3c3;
+        }
+          .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator:after {
+              background-color: #0800ff;
+              left: 30px;
+          }
+        .custom-checkbox .custom-control-input:focus ~ .custom-control-indicator {
+          box-shadow: none !important;
+        }
+
+        .table-warning, .table-warning>td, .table-warning>th {
+          background-color: #1200ff;
+          color: white;
+      }
+
+      /* ================================================================
+       List for Finance Tables  v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+      ====================================================================*/
+      .quantity {
+          float: left;
+          margin-right: 15px;
+          background-color: #eee;
+          position: relative;
+          width: 80px;
+          overflow: hidden
+      }
+      .quantity input {
+          margin: 0;
+          text-align: center;
+          width: 15px;
+          height: 15px;
+          padding: 0;
+          float: right;
+          color: #000;
+          font-size: 20px;
+          border: 0;
+          outline: 0;
+          background-color: #F6F6F6
+      }
+      .quantity input.qty {
+          position: relative;
+          border: 0;
+          width: 100%;
+          height: 40px;
+          padding: 10px 25px 10px 10px;
+          text-align: center;
+          font-weight: 400;
+          font-size: 15px;
+          border-radius: 0;
+          background-clip: padding-box
+      }
+      .quantity .minus, .quantity .plus {
+          line-height: 0;
+          background-clip: padding-box;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          -webkit-background-size: 6px 30px;
+          -moz-background-size: 6px 30px;
+          color: #bbb;
+          font-size: 20px;
+          position: absolute;
+          height: 50%;
+          border: 0;
+          right: 0;
+          padding: 0;
+          width: 25px;
+          z-index: 3
+          }
+          .quantity .minus:hover, .quantity .plus:hover {
+              background-color: #dad8da
+          }
+          .quantity .minus {
+              bottom: 0
+          }
+          .shopping-cart {
+              margin-top: 20px;
+          }
+          /* ================================================================
+           Schräge Backgrouns  v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+          ====================================================================*/
+        .slewedBox {
+            background: #2c64f1;
+            padding: 100px 0;
+            transform: skew(0deg, -10deg) translateY(-190px);
+            color: white;
+            background: linear-gradient( to left, rgba(59, 64, 226, 0.8), /* #5350ff */ rgba(33, 54, 158, 0.7) /* #4e4be0 */ ),
+            url(https://blog.iqoption.com/wp-content/uploads/2016/06/bitcoin-pokupka-3.jpg) no-repeat left top;
+            background-size: cover;
+            z-index: 0;
+
+        }
+        .slewedBox1 {
+            background:#2c64f1;
+            padding: 100px 0;
+            transform: skew(0deg, -10deg) translateY(-190px);
+            color:white;
+        }
+        .slewedBox h1 {
+
+            color:white;
+        }.slewedBox1 h1 {
+
+        color:white;
+        }
+        .container1 {
+            padding: 50px 100px;
+            transform: skew(0deg, 10deg);
+            font-family: arial;
+
+        }
+        .container1 h1 {
+            margin: 0;
+            padding: 20px 0;
+            font-size: 3em;
+        }
+        .container1 p {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            line-height: 1.5em;
+            width: 80%;
+        }
+        .sec2 {
+          /* padding: 0 1px 100px; */
+          color: #fff;
+          font-family: arial;
+          text-align: right;
+          margin-top: -400px;
+        }
+        .sec2 h1 {
+            margin: 0;
+            padding: 20px 0;
+            font-size: 3em;
+            color:#2c64f1;
+        }
+        .sec2 p {
+            margin: 0;
+            padding: 0;
+            font-size: 1em;
+            line-height: 1.5em;
+            width: 100%;
+            color:#2c64f1;
+        }
+        /* ================================================================
+         Files Input  v.0.1  V.0.1 | uiuxfy.css https://uiuxfy.io
+        ====================================================================*/
+        .files input {
+            outline: 2px dashed blue;
+            outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            padding: 120px 0px 85px 35%;
+            text-align: center !important;
+            margin: 0;
+            width: 100% !important;
+        }
+        .files input:focus{     outline: 2px dashed #92b0b3;  outline-offset: -10px;
+            -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+            transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
+         }
+        .files{ position:relative}
+        .files:after {  pointer-events: none;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 50px;
+            right: 0;
+            height: 56px;
+            content: "";
+            background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+            display: block;
+            margin: 0 auto;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .color input{ background-color:#f1f1f1;}
+        .files:before {
+            position: absolute;
+            bottom: 10px;
+            left: 0;  pointer-events: none;
+            width: 100%;
+            right: 0;
+            height: 57px;
+            content: " or drag it here. ";
+            display: block;
+            margin: 0 auto;
+            color: blue;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        /* ==========================================================================
+        The switch - the box around the slider V.0.1   | uiuxfy.css https://uiuxfy.io
+        =============================================================================*/
+        /* The switch - the box around the slider V.0.1  */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+            float:right;
+          }
+
+          /* Hide default HTML checkbox */
+          .switch input {display:none;}
+
+          /* The slider */
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+          }
+
+          input.default:checked + .slider {
+            background-color: #444;
+          }
+          input.primary:checked + .slider {
+            background-color: #2196F3;
+          }
+          input.success:checked + .slider {
+            background-color: #8bc34a;
+          }
+          input.info:checked + .slider {
+            background-color: #3de0f5;
+          }
+          input.warning:checked + .slider {
+            background-color: #FFC107;
+          }
+          input.danger:checked + .slider {
+            background-color: #f44336;
+          }
+
+          input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+          }
+
+          input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+          }
+
+          /* Rounded sliders */
+          .slider.round {
+            border-radius: 34px;
+          }
+
+          .slider.round:before {
+            border-radius: 50%;
+          }
+
+      /* ==========================================================================
+      Chat Ui  V.0.1   | uiuxfy.css https://uiuxfy.io
+      =============================================================================*/
+    .mytext{
+        border:0;padding:10px;background:#0055ff;
+    }
+    .text{
+        width: 100%;display:flex;flex-direction:column;
+    }
+    .text > p:first-of-type{
+        width:100%;margin-top:0;margin-bottom:auto;line-height: 13px;font-size: 12px;
+        float: left;
+        text-align: left;
+    }
+    .text > p:last-of-type{
+        width:100%;text-align:right;color:silver;margin-bottom:-7px;margin-top:auto;
+    }
+    .text-l{
+        float:left;padding-right:10px;
+    }
+    .text-r{
+        float:right;padding-left:10px;
+    }
+    input.mytext {
+        color:white;
+    }
+    .avatar{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:25%;
+        float:left;
+        padding-right:10px;
+    }
+    .macro{
+        margin-top:5px;width:85%;border-radius:5px;padding:5px;display:flex;
+        color: white;
+    }
+    .msj-rta{
+        float:right;
+        background: #0055ff;
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.9);
+    }
+    .msj{
+        float:left;
+        background: #007bff;
+        box-shadow: 2px 2px 20px rgba(0,0,0,0.9);
+    }
+    .frame{
+        background:#374aff;
+        height:450px;
+        overflow:hidden;
+        padding:0;
+    }
+    .frame > div:last-of-type{
+        position:absolute;bottom:5px;width:100%;display:flex;
+    }
+    #s-chat-list {
+        width:100%;
+        list-style-type: none;
+        padding:18px;
+        position:absolute;
+        bottom:32px;
+        display:flex;
+        flex-direction: column;
+
+    }
+    .msj:before{
+        width: 0;
+        height: 0;
+        content:"";
+        top:-5px;
+        left:-14px;
+        position:relative;
+        border-style: solid;
+        border-width: 0 13px 13px 0;
+        border-color: transparent  #007bff  transparent transparent;
+    }
+    .msj-rta:after{
+        width: 0;
+        height: 0;
+        content:"";
+        top:-5px;
+        left:14px;
+        position:relative;
+        border-style: solid;
+        border-width: 13px 13px 0 0;
+        border-color: #0055ff transparent transparent transparent;
+    }
+    input:focus{
+        outline: none;
+    }
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #d4d4d4;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: #d4d4d4;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: #d4d4d4;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        color: #d4d4d4;
+    }
+  /* ==========================================================================
+   Friendly Questions Asks Tabs  | uiuxfy.css https://uiuxfy.io
+  =============================================================================*/
+
+    .pd-2{
+        padding:2%;
+    }
+    .pd-r-2{
+        padding-right:2%;
+    }
+    .pd-l-2{
+        padding-left:2%;
+        padding-top: 20px;
+    }
+    .pd-t-2{
+        padding-top:2%;
+    }
+    .pd-b-2{
+        padding-bottom:3%;
+    }
+    li {
+        list-style: none;
+
+    }
+    div[data-toggle="collapse"]{
+      border-bottom: 1px solid #8a8a8a2e!important;
+      width: 100%;
+      cursor: pointer;
+      padding: 1%;
+      box-shadow: 0px 2px 2px rgba(51, 51, 51, 0.47);
+      border-radius: 4px;
+    }
+
+    /* ==========================================================================
+     Testimonals V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+    .sd-testimonals .box-testimony {
+        margin-bottom: 2em;
+        float: left;
+      }
+      .sd-testimonals .box-testimony a {
+        color: rgba(255, 255, 255, 0.5);
+      }
+      .sd-testimonals .box-testimony a:hover, .sd-testimonals .box-testimony a:focus, .sd-testimonals .box-testimony a:active {
+        color: white;
+        text-decoration: none;
+      }
+      .sd-testimonals .box-testimony blockquote {
+        padding-left: 0;
+        border-left: none;
+        padding: 30px;
+        background: #fff;
+        background: #2c64f1;
+        font-weight: 300;
+        position: relative;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        border-radius: 7px;
+      }
+      .sd-testimonals .box-testimony blockquote:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 40px;
+        border-top: 10px solid black;
+        border-top-color: #fff;
+        border-top-color: #2c64f1;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+      }
+      .sd-testimonals .box-testimony blockquote p {
+        font-style: italic;
+        color: #fff;
+      }
+      .sd-testimonals .box-testimony .author {
+        line-height: 20px;
+        color: black;
+        font-size: 16px;
+        margin-left: 20px;
+        font-weight: 400;
+      }
+      .sd-testimonals .box-testimony .author a {
+        color: #2c64f1;
+      }
+      .sd-testimonals .box-testimony .author a:hover {
+        text-decoration: underline;
+      }
+      .sd-testimonals .box-testimony .author > figure {
+        float: left;
+        margin-right: 10px;
+      }
+      .sd-testimonals .box-testimony .author > figure img {
+        width: 60px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+      }
+      .sd-testimonals .box-testimony .author p {
+        float: left;
+        margin-top: 10px;
+      }
+      .sd-testimonals .box-testimony .author .subtext {
+        display: block;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        font-weight: 400 !important;
+      }
+      /* ==========================================================================
+       SwitchBox Slider V.0.1 | uiuxfy.css https://uiuxfy.io
+      =============================================================================*/
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 34px;
+      float: right;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {display:none;}
+
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    input.default:checked + .slider {
+      background-color: #444;
+    }
+    input.primary:checked + .slider {
+      background-color: #2196F3;
+    }
+    input.success:checked + .slider {
+      background-color: #8bc34a;
+    }
+    input.info:checked + .slider {
+      background-color: #3de0f5;
+    }
+    input.warning:checked + .slider {
+      background-color: #FFC107;
+    }
+    input.danger:checked + .slider {
+      background-color: #f44336;
+    }
+
+    input:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+
+    .slider.round:before {
+      border-radius: 50%;
+    }
+
+    /* ==========================================================================
+     °Forms V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+
+    .form-control {
+      display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff0;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .form-control:hover {
+    background-color: #fff0;
+    color:white;
+
+    }
+    .form-control:active {
+    background-color: #fff0;
+    color:white;
+    }.form-control:focus {
+    background-color: #fff0;
+    color:white;
+    }
+
+    /* ==========================================================================
+     °Social Media Buttons V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+
+    .btn-social {
+        color: #fff;
+        border-radius: .25rem;
+    }
+    .btn-social:hover  {
+      color:#ccc;
+    }
+    .btn-social-small {
+        color: #ccc;
+        border-radius: .25rem;
+        font-size: 14px;
+    }
+    .bg-facebook {
+        background-color: #3b5998;
+    }
+    .bg-twitter {
+        background-color: #55acee;
+    }
+    .bg-google {
+        background-color: #dc4e41;
+    }
+    .bg-linkedin {
+        background-color: #0077b5;
+    }
+    .btn {
+        cursor: pointer;
+    }
+    @media (min-width: 992px){
+    .btn {
+        padding: 1.4rem 3.125rem 1.3rem;
+    }}
+    .btn {
+        padding: 1.4rem 2.125rem 1.3rem;
+        font-size: .8125rem;
+        line-height: 1.1538;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        border-width: 1px;
+    }.btn-social-icon {
+        padding: 1.4rem;
+        background-color: #fff;
+        font-size: 22px;
+    }
+    .btn-social {
+        color: #fff;
+        border-radius: .25rem;
+    }
+    .btn-social-facebook:focus, .btn-social-facebook:hover {
+        background-color: #3b5998;
+        color:white;
+    }
+    .btn-social-twitter:focus, .btn-social-twitter:hover {
+        background-color: #55acee;
+        color:white;
+    }
+    .btn-social-google:focus, .btn-social-google:hover {
+        background-color: #dc4e41;
+        color:white;
+    }
+    .btn-social-linkedin:focus, .btn-social-linkedin:hover {
+        background-color: #0077b5;
+        color:white;
+    }
+
+    /* ==========================================================================
+    °Charts Holder  V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+
+    #chart-holder::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 100%;
+        font: 700 35px sans-serif;
+        text-align: center;
+        content: attr(data-active);
+        transform: translate(-50%,-50%);
+    }
+    #chart-holder {
+        position: relative;
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    select.input-block-level {
+      display: inline-block;
+          font-weight: 400;
+          text-align: center;
+          white-space: nowrap;
+          vertical-align: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          border: 1px solid transparent;
+          padding: .775rem .75rem;
+          font-size: 1rem;
+          line-height: 1.5;
+          border-radius: .25rem;
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+          background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+          background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1a000000', GradientType=0);
+          background-repeat: repeat-x;
+          background-size: 200%;
+          background-position: 0 -100%;
+          padding-left: 30px!important;
+          padding-right: 30px!important;
+          letter-spacing: 2px!important;
+          color: #fff;
+          border-color: #1c46f2;
+          background-color: #1c46f2;
+
+    }
+    input.input-block-level.form-control.text-dark {
+        width: 100%;
+        margin-bottom: 10px;
+        background: rgba(20, 114, 255, 0.88);
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 13px;
+        color: white;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+        border: 1px solid rgba(0,0,0,0.3);
+        border-radius: 4px;
+        box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+        -webkit-transition: box-shadow .5s ease;
+        -moz-transition: box-shadow .5s ease;
+        -o-transition: box-shadow .5s ease;
+        -ms-transition: box-shadow .5s ease;
+        transition: box-shadow .5s ease;
+    }
+
+
+    /* ==========================================================================
+     °Footer V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+
+    footer.uiuxfy-footer-gradient {
+        padding-top: 90px;
+      padding-bottom: 3rem;
+      /*background: #663fb5 url(../img/bg-testimonials.jpg) no-repeat center bottom;*/
+    background-size: cover;
+    background: linear-gradient( rgba(43, 147, 234, 0.8), /* #256dab */ rgba(14, 35, 239, 0.8), /* #6c5b7b */ rgba(44, 27, 144, 0.8);
+     /*background: linear-gradient( rgba(43, 147, 234, 0.8), /* #256dab */ rgba(14, 35, 239, 0.8), /* #6c5b7b */ rgba(44, 27, 144, 0.8) /* #0037ff */ ),
+      url(https://cdn.stocksnap.io/img-thumbs/960w/Y01VDYAX63.jpg) no-repeat left top;*/
+    background-size: cover;
+    z-index: 0;
+    }
+    footer.uiuxfy-footer-gradient p{
+
+    }footer.uiuxfy-footer-gradient li {
+
+    }footer.uiuxfy-footer-gradient ul {
+    padding-right: 15px;
+    font-size: 13px;
+    }footer.uiuxfy-footer-gradient a{
+
+    }footer.uiuxfy-footer-gradient h3 {
+    font-size: 13px;
+    }
+    .text-center.copyright {
+      color: white;
+    }
+    .uiuxfy-footer-icons {
+    font-size: 60px;
+    }.btn.btn-primary.uiuxfx-buttons-rr {
+      -moz-border-radius-topleft: 0;
+        -webkit-border-top-left-radius: 0;
+        border-top-left-radius: 0;
+        -moz-border-radius-bottomleft: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0;
+        font-size: 14px;
+        min-width: 93px;
+    }
+    uiuxyf .bg-gradient footer {
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }.uiuxyf ul.social-icons li a {
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        display: block;
+        width: 47px;
+        height: 50px;
+        font-size: 24px;
+        color: #f0f0f0;
+        text-align: center;
+        -moz-box-shadow: 0 0 3px #888;
+        -webkit-box-shadow: 0 0 3px#888;
+        box-shadow: 0 0 3px #888;
+    }.list-inline {
+        padding-left: 0;
+        margin-left: -5px;
+        list-style: none;
+    }.list-inline>li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .uiuxyf footer {
+        font-weight: 500;
+        color: #eaeaea;
+    }.uiuxyf footer .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }.uiuxyf .social-connect {
+        padding-top: 15px;
+    }.uiuxyf .footer-heading {
+        margin: 0 0 13px 0;
+        font-size: 16px;
+        line-height: 2;
+        color: #f0f0f0;
+    }.uiuxyf .newsletter-form {
+        margin-top: 20px;
+    }.uiuxyf .bg-gradient .newsletter-form .input-group-lg > .form-control,
+    .uiuxyf .bg-background .newsletter-form .input-group-lg > .form-control {
+        background: rgba(12, 12, 12, 0.5);
+    }.uiuxyf .newsletter-form .input-group-lg .input-group-btn:last-child > .btn {
+        margin-left: 0;
+    }input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control {
+        position: relative;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        width: 1%;
+        margin-bottom: 0;
+        font-size: 13px;
+    }
+
+    /* ==========================================================================
+     °Section Block Featured V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+    /*
+    Section Featured // Mock Up V.0.1
+    Stylesheets for the Feastures Section with the Mock Up V.0.1
+    See uiuxy.css File : https://
+     */
+
+    #featured {
+
+        color: #b9b9b9;
+        text-align: center;
+    }#featured .overlay {
+        padding-bottom: 0;
+        background: none repeat scroll 0 0 rgba(40, 40, 40, 0.9);
+        padding-top: 100px;
+        width: 100%;
+        height: 100%;
+    }
+    #featured h5 {
+        color: #fff;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }#featured hr {
+        border: 1px solid #fff;
+        width: 100px;
+    }
+
+    .aligncenter {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        clear: both;
+    }#featured p {
+        color: #b9b9b9;
+    }
+
+
+    /* ==========================================================================
+     °Section News V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+    /*<!-- /*
+    Section News // Halfside White / halfsie Picture Up V.0.1
+    Stylesheets for the Halfside White / halfsie Picture Up V.0.1
+    See uiuxy.css File : https://
+     -->*/
+    .news {
+    	background-position: center;
+    	background-image: url('../img/bg/uiuxfy_upgrade_promo.jpg');
+    	background-size: cover;
+      padding-top: 0px;
+    }
+
+    .news .container {
+    	width: 100%
+    }
+
+    .section-bg-color {
+    	background-color: #fff;
+    	height: 100%;
+    	padding-top: 40px;
+    	padding-bottom: 80px;
+    }
+
+    .section-bg-color h3, .section-bg-color h1, .section-bg-color p {
+    	margin-left: 25px;
+    	margin-right: 25px
+    }
+
+    .section-bg-color h3 {
+    	font-weight: 300;
+    }
+
+    .section-bg-color h1 {
+    	font-weight: 900;
+    	text-transform: uppercase;
+    }
+
+    .section-bg-color hr{
+    	border-bottom: 1px solid #e5e6ec;
+    	border-top: transparent;
+    	width: 100%;
+    }
+
+    .section-bg-color hr.blog {
+    	border: 2px solid #5a5a5a;
+    	width: 70px;
+    	margin-left: 25px;
+    }
+
+    nm {
+    	font-size: 12px;
+    	color: #939399;
+    	font-weight: 400;
+    }
+
+
+    /* ==========================================================================
+    °Modal Sections V.0.1 | uiuxfy.css https://uiuxfy.io
+    =============================================================================*/
+    /* Modals Sections Css Stylesheetz V.0.1 */
+    .modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef12;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+    }
+    .modal-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+    border-top: 1px solid #e9ecef0f;
+}
+
+
+/* ==============================================================================================
+
+uiuxfy details : uiuxfy css stylesheets V.0.1 Value
+date: 2 March 2018
+author: L.G => https://github.com/spaceg
+
+================================================================================================== */
+
+
+/* Box shadows for anything else */
+.uiuxfy-box-shadow {
+box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+}
+
+/* But The Content to center, anything else */
+.uiuxfy-margin-center {
+margin: 0 auto;
+display: table;
+}
+/* Paddings 20px bottom and 20 px top */
+.uiuxfy-paddings-top-bottom {
+padding: 20px;
+padding: 20px;
+}
+.uiuxfy-border-radius {
+  border-radius: 6px;
+}
+.uiuxfy-border-radius-top {
+border-radius: 10px 10px 0px 0px;
+
+}
+.uiuxfy-border-radius-bottom {
+border-radius: 0px 0px 10px 10px;
+
+}
+.uiuxfy-border-radius-left {
+  border-radius: 0px 10px 10px 10px;
+
+}
+.uiuxfy-border-radius-right {
+border-radius: 10px 0px 0px 10px;
+
+}
+/*
+
+Forms Holder means Passing inside from the container outside of the form :
+like: <div class="your-container"><! -- the padding 40px; --> <form> ... starts here ... </form>
+<! -- the padding 40px; --> </div>
+
+*/
+
+
+.uiuxfy-form-holder {
+    padding: 40px;
+box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+}
+
+/* Boostrap 4 COmponents Changed */
+/* Gradient °Background Color GRadinet Test */
+
+
+/* Diffirent Backgrounds : */
+.uiuxfy-dig-bgs {
+  /* background: #355c7d; */
+  background: linear-gradient( to left, rgb(59, 64, 226), /* #5350ff */ rgb(0, 193, 247) /* #0500fb */ ), url(../images/creditcard-8small.png) no-repeat left top;
+  background-size: cover;
+  z-index: 0;
+
+
+
+}
+/* Boostrap 4 COmponents Changed */
+/* Gradient °Background Color GRadinet Test */
+.has-gradient-uiuxfy-purple {
+    background-image: linear-gradient(45deg,#1c46f2,#2b8be3);
+    background-repeat: repeat-x;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #1c46f2;
+    border-color: #1c46f2;
+}
+
+.d-flex.align-items-center.p-3.my-3.text-white-50.bg-purple.rounded.box-shadow {
+    background: blue;
+    color: white;
+}
+/* ==============================================================================
+°uiuxfy.css FREE Version Responsive Designs  V.0.1 | uiuxfy.css https://uiuxfy.io
+=================================================================================*/
+    /* Responsive Desin */
+
+    @media (min-width: 992px){
+    header.masthead {
+        height: 100vh;
+        min-height: 650px;
+        padding-top: 0;
+        /*padding-bottom: 0;*/
+    }}
